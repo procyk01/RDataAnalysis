@@ -1,13 +1,6 @@
 rankall <- function(outcome, num){
-
 	
 	oc <- read.csv("C:\\Coursera\\ComputingForDataAnalysis\\Assn3\\outcome-of-care-measures.csv")
-	
-	# if (!(state %in% stateslist)) {
-		# stop("invalid state")
-	# }
-	
-	
 	
 	if (!(outcome %in% outcomelist)) {
 		stop("invalid outcome")
@@ -39,7 +32,6 @@ rankall <- function(outcome, num){
 		} 	else {
 			hosp <- "NA"
 		}
-	
 	
 		z <- data.frame(hosp,statelist[istate])
 		colnames(z) = c("hospital","state")
